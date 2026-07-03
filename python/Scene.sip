@@ -10,7 +10,7 @@ public:
     Scene();
     virtual ~Scene();
 
-    std::vector<SceneNode*> getSceneNodes();
+    const std::vector<SceneNode*>& getSceneNodes() const;
     std::vector<SceneNode*> getAllSceneNodes();
 
     void addSceneNode(SceneNode* node /Transfer/);
@@ -21,7 +21,7 @@ public:
     void setMetaDataEntry(const std::string& key, const std::string& value, const std::string& type);
     void setMetaDataEntry(const std::string& key, const std::string& value, const std::string& type, const bool preserve);
 
-    std::string getUnit();
+    const std::string& getUnit() const;
     void setUnit(std::string unit);
 };
 

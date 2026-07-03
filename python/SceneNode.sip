@@ -10,14 +10,14 @@ public:
     SceneNode();
     virtual ~SceneNode();
 
-    MeshData& getMeshData();
+    const MeshData& getMeshData() const;
 
-    std::vector<SceneNode*> getChildren();
+    const std::vector<SceneNode*>& getChildren() const;
 
-    std::string getTransformation();
-    void setTransformation(std::string);
+    const std::string& getTransformation() const;
+    void setTransformation(const std::string&);
     
-    std::string getName();
+    const std::string& getName() const;
     void setName(std::string name);
 
     int getId();
