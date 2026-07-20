@@ -10,7 +10,7 @@ public:
     MeshData();
     virtual ~MeshData();
     bytearray getVerticesAsBytes();
-    bytearray getFacesAsBytes();
+    bytearray getFacesAsBytes() const;
 
     bytearray getFlatVerticesAsBytes();
 
