@@ -11,6 +11,7 @@ public:
     virtual ~SceneNode();
 
     const MeshData& getMeshData() const;
+    void setMeshData(const MeshData& mesh_data);
 
     const std::vector<SceneNode*>& getChildren() const;
 
